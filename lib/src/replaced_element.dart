@@ -11,7 +11,7 @@ import 'package:flutter_html/html_parser.dart';
 import 'package:flutter_html/src/html_elements.dart';
 import 'package:flutter_html/src/utils.dart';
 import 'package:flutter_html/style.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:video_player/video_player.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -288,11 +288,12 @@ class SvgContentElement extends ReplacedElement {
 
   @override
   Widget toWidget(RenderContext context) {
-    return SvgPicture.string(
-      data,
-      width: width,
-      height: height,
-    );
+    return Container();
+    // return SvgPicture.string(
+    //   data,
+    //   width: width,
+    //   height: height,
+    // );
   }
 }
 
